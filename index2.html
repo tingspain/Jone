@@ -17,23 +17,30 @@
             max-width: 500px;
             margin: auto;
         }
+
+        #qr-result{
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+        }
+
     </style>
 </head>
-<body>
+<body class="p-3">
+    <button class="btn btn-primary mt-3" style="background-color: #01652F;" onclick="window.location.href = 'index.html'"><- Ir al QR Generator</button>
 
     <div class="m-4 d-flex flex-column">
         <h2 class="text-center">Jone's QR Code Scanner</h2>
         <div id="qr-reader" class="mb-3"></div>
-        <div  id="qr-result" hidden>
+        <div id="qr-result" hidden>
             <p >Información del Invitado: 
-                <div class="card p-3">
+                <div class="card p-3" style="max-width: 500px; align-self: center;">
                     <span id="result" hidden></span>
                     <h3 id="result_name">JuanMa Romero Martin</h3>
                     <span id="result_zone" class="badge  bg-success">Zona 2</span>
                 </div>
             </p>
         </div>
-        <button class="btn btn-primary mt-3" style="background-color: #01652F; width: 500px; align-self: center;" onclick="window.location.href = 'index.html'">QR Generator</button>
 
     </div>
 
