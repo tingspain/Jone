@@ -21,7 +21,7 @@
 </head>
 <body>
 
-    <div class="m-4">
+    <div class="m-4 d-flex flex-column">
         <h2 class="text-center">Jone's QR Code Scanner</h2>
         <div id="qr-reader" class="mb-3"></div>
         <div  id="qr-result" hidden>
@@ -33,10 +33,21 @@
                 </div>
             </p>
         </div>
+        <button class="btn btn-primary mt-3" style="background-color: #01652F; width: 500px; align-self: center;" onclick="window.location.href = 'index.html'">QR Generator</button>
+
     </div>
 
 <script>
-  function onScanSuccess(decodedText, decodedResult) {
+
+    window.onload = () => {
+        var elements = document.getElementsByTagName("a");
+        console.log(elements)
+        for (let item of elements) {
+            item.hidden = true;
+        }
+    }
+
+    function onScanSuccess(decodedText, decodedResult) {
         // Handle the result here
         console.log(`Code scanned = ${decodedText}`, decodedResult);
         
@@ -61,6 +72,7 @@
         "qr-reader", 
         { fps: 10, qrbox: 250 }
     );
+
     html5QrcodeScanner.render(onScanSuccess, onScanError);
 
 </script>
