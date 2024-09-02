@@ -1,0 +1,14 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Real Academia de Gastronomía",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "AcademiaGastronomia",
+  "start_url": "/",
+  "theme_color": "#01652f",
+  "id": "AcademiaGastronomia",
+  "description": "50 Aniversario de la Real Academia de Gastronomía",
+  "lang": "es"
+}
