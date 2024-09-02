@@ -3,12 +3,17 @@
   "dir": "ltr",
   "display": "standalone",
   "name": "Real Academia de Gastronomía",
-  "orientation": "any",
   "scope": "/",
   "short_name": "AcademiaGastronomia",
   "start_url": "/",
   "theme_color": "#01652f",
   "id": "AcademiaGastronomia",
   "description": "50 Aniversario de la Real Academia de Gastronomía",
-  "lang": "es"
+  "lang": "es",
+  "icons": [
+    {
+      "src": "LOGO_RAG_2024-2.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }]
 }
