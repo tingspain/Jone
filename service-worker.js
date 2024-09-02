@@ -3,7 +3,13 @@ const filesToCache = [
   '/',
   '/index.html',
   '/manifest.json',
-  '/LOGO_RAG_2024-2.png'
+  '/LOGO_RAG_2024-2.png',
+  '/splash/launch-750x1294.png',
+  '/splash/launch-1125x2436.png',
+  '/splash/launch-1242x2148.png',
+  '/splash/launch-1536x2048.png',
+  '/splash/launch-1668x2224.png',
+  '/splash/launch-2048x2732.png'
 ];
 
 self.addEventListener('install', event => {
